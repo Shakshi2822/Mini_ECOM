@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.myapplication.viewmodel.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to E-Commerce App"
+            android:textSize="18sp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/goToProductsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse Products"
+            android:layout_below="@id/welcomeText"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
